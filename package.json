@@ -90,7 +90,8 @@
     "wrap-ansi": "^8.1.0"
   },
   "scripts": {
-    "start": "serve"
+    "start": "serve",
+    "build": "webpack -- watch"
   },
   "repository": {
     "type": "git",

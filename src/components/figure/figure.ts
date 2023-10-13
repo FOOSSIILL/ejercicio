@@ -35,3 +35,5 @@ export default class Figure extends HTMLElement {
         }
     }
 }
+
+customElements.define('app-figure', Figure);

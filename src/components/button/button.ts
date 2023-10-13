@@ -35,5 +35,14 @@ export default class Button extends HTMLElement {
 
     render(){
         if (this.shadowRoot) this.shadowRoot.innerHTML ='';
+
+        const button = this.ownerDocument.createElement('button');
+        button.innerText = `${this.btn_text}`
+        button.addEventListener('click', () =>{
+            button.innerText = "No like";
+        })
+        this.shadowRoot?.appendChild(button);
     }
 }
+
+customElements.define('app-button', Button);
